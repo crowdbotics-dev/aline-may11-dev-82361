@@ -1,16 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import { custom, deepStyle } from "./styles";
+import { custom } from "./styles";
 
 const StyleSheetScreen = () => (
   <View style={page.container}>
     <Text style={flattenStyle}>React Native - this is React native</Text>
     <Text>Flatten Style</Text>
     <Text style={[page.code, { marginBottom: 30 }]}>{JSON.stringify(flattenStyle, null, 2)}</Text>
-    <Text style={[page.text, typography.header, custom.font]}>This is Studio parsed</Text>
-    <Text style={deepStyle}>Deep imported works.</Text>
-
-
+    <Text style={[page.text, typography.header, custom.font]}>This is Studio parsed result</Text>
+    <Text>The whole point of this screen is to detect disparities of merging styles from codegen and React original merge strategy.</Text>
   </View>
 );
 
