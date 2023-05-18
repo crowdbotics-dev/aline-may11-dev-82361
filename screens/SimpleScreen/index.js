@@ -4,9 +4,9 @@ import { custom, deepStyle } from "./styles";
 
 const SimpleScreen = () => <View style={page.container}>
     <Text style={[page.text, custom.font]}>Hello World!</Text>
-    <Text>The title above is an external stylesheet and a local one.</Text>
+    <Text style={page.JzYmJEbM}>The title above is an external stylesheet and a local one.</Text>
     <Text style={deepStyle}>Single object from external file.</Text>
-    <Text style={custom.background}>Normal stylesheet from external file.</Text>
+    <Text style={[custom.background, page.DFIPbUrC]}>Normal stylesheet from external file.</Text>
     <Text style={[page.text, deepStyle]}>
       Merging local and single object from external file.
     </Text>
@@ -33,18 +33,32 @@ const page = StyleSheet.create({
     marginBottom: 10
   },
   ldLMSOTA: {
-    fontSize: 20
+    fontSize: 20,
+    width: 307,
+    height: 79,
+    color: "#4f1f1f"
   },
   MDqIshca: {
-    fontSize: 15
+    fontSize: 15,
+    color: "#dd2f2f"
   },
   XhZYALfA: {
     fontSize: 20,
-    marginTop: 10
+    marginTop: 10,
+    width: 311,
+    height: 102,
+    color: "#450e0e"
   },
   QBdsEBQV: {
     fontSize: 20,
-    marginTop: 10
+    marginTop: 10,
+    color: "#e77d7d"
+  },
+  DFIPbUrC: {
+    color: "#ac0000"
+  },
+  JzYmJEbM: {
+    color: "#b21b1b"
   }
 });
 export default SimpleScreen;
